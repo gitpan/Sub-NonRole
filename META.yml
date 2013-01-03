@@ -1,0 +1,38 @@
+---
+abstract: "prevent some subs from appearing in a role's API"
+author:
+  - 'Toby Inkster <tobyink@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.59
+  Moo: 1.000000
+  Moo::Role: 0
+  Test::Requires: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.59
+distribution_type: module
+dynamic_config: 0
+generated_by: 'Module::Install version 1.06'
+keywords: []
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+module_name: Sub::NonRole
+name: Sub-NonRole
+no_index:
+  directory:
+    - inc
+    - t
+    - xt
+requires:
+  Hook::AfterRuntime: 0
+  MooX::CaptainHook: 0.004
+  Sub::Identify: 0
+  Sub::Talisman: 0
+  perl: 5.8.0
+resources:
+  bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=Sub-NonRole
+  homepage: https://metacpan.org/release/Sub-NonRole
+  license: http://dev.perl.org/licenses/
+  repository: https://bitbucket.org/tobyink/p5-sub-nonrole
+version: 0.001
