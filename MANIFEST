@@ -36,4 +36,5 @@ t/02moomoo.t
 t/03moomoose.t
 t/04moosemoo.t
 t/05moosemoose.t
+t/06mxrp.t
 SIGNATURE                                Public-key signature (added by MakeMaker)

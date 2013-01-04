@@ -33,7 +33,8 @@ DESCRIPTION
        My::Role->other_function();
        My::Role::other_function();
 
-    It should work with Role::Tiny, Moo::Role and Moose::Role roles.
+    It should work with Role::Tiny, Moo::Role, Moose::Role and
+    MooseX::Role::Parameterized roles.
 
   Developer API
     "Sub::NonRole->setup_for($role)"
