@@ -5,7 +5,7 @@ use strict;
 
 BEGIN {
 	$Sub::NonRole::AUTHORITY = 'cpan:TOBYINK';
-	$Sub::NonRole::VERSION   = '0.002';
+	$Sub::NonRole::VERSION   = '0.003';
 }
 
 use Hook::AfterRuntime;
@@ -205,6 +205,12 @@ of non-role method names.
 Currently when consuming a Moo role within a Moose class, Sub::NonRole
 can cause a warning to be issued in the global cleanup phase. This is
 unlikely to result in serious problems; it's just annoying.
+
+In older Perls (before 5.10.1 I believe), importing Sub::Role into a package
+without actually applying the attribute to any subs can cause a crash with
+the error message I<< Internal error: Your::Package symbol went missing >>.
+Once you've applied the C<:NonRole> attribute to a sub, everything should be
+OK.
 
 Please report any other bugs to
 L<http://rt.cpan.org/Dist/Display.html?Queue=Sub-NonRole>.

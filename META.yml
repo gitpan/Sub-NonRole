@@ -35,4 +35,4 @@ resources:
   homepage: https://metacpan.org/release/Sub-NonRole
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-sub-nonrole
-version: 0.002
+version: 0.003
