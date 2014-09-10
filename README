@@ -37,24 +37,24 @@ DESCRIPTION
     MooseX::Role::Parameterized roles.
 
   Developer API
-    "Sub::NonRole->setup_for($role)"
+    `Sub::NonRole->setup_for($role)`
         If you wish to import the Sub::NonRole functionality into another
         package, this is how to do it.
 
-    "$role->meta->non_role_methods"
+    `$role->meta->non_role_methods`
         For Moose roles (but not Moo or Role::Tiny ones) you can access the
-        "non_role_methods" attribute on the role's meta object to get an
+        `non_role_methods` attribute on the role's meta object to get an
         arrayref of non-role method names.
 
 BUGS
-    Currently when consuming a Moo role within a Moose class, Sub::NonRole
-    can cause a warning to be issued in the global cleanup phase. This is
-    unlikely to result in serious problems; it's just annoying.
+    Currently when consuming a Moo role within a Moose class, Sub::NonRole can
+    cause a warning to be issued in the global cleanup phase. This is unlikely
+    to result in serious problems; it's just annoying.
 
     In older Perls (before 5.10.1 I believe), importing Sub::Role into a
     package without actually applying the attribute to any subs can cause a
     crash with the error message *Internal error: Your::Package symbol went
-    missing*. Once you've applied the ":NonRole" attribute to a sub,
+    missing*. Once you've applied the `:NonRole` attribute to a sub,
     everything should be OK.
 
     Please report any other bugs to
@@ -69,8 +69,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2013 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
